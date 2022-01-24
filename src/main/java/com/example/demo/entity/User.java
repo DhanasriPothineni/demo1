@@ -6,6 +6,8 @@ import javax.persistence.GenerationType;
 import javax.persistence.Id;
 import javax.validation.constraints.NotBlank;
 
+import org.hibernate.validator.constraints.Range;
+
 @Entity
 public class User {
 	@Id
@@ -13,6 +15,7 @@ public class User {
 	private Integer id;
 	@NotBlank
 	private String name;
+	@Range(min=0)
 	private Integer age;
 
 	public Integer getAge() {
