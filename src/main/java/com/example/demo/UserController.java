@@ -29,6 +29,6 @@ public class UserController {
   @DeleteMapping("/user")
   void deleteUser()
   {
-	  
+	  //Removed the word comments
   }
 }
